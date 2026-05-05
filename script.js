@@ -135,3 +135,12 @@ document.querySelectorAll('.faq-question').forEach(btn => {
   resetProgress();
   startAuto();
 })();
+const waBtn = document.getElementById("whatsapp-btn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    waBtn.classList.add("show");
+  } else {
+    waBtn.classList.remove("show");
+  }
+});
